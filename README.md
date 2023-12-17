@@ -1,5 +1,7 @@
-# RaspberryPi & NAS KIT
-Descripcion de Pasos para configuracion RaspBerry Pi B+ 1.2 + SUNFounder NAS KIT
+# RaspberryPi & NAS-KIT [^3]
+Proyecto en español con los pasos para la configuracion RaspBerry Pi B+ 1.2 + SUNFounder NAS KIT. Esta receta tambien funciona para el modelo RaspBerry Pi 4 B+ / + SUNFounder NAS KIT aunque aqui por ejemplo puedes usar la ultima version de Raspbian OS
+
+<img src="https://user-images.githubusercontent.com/16457731/127794777-ea7adc74-9ac8-45f6-bbe2-5afe0ba11bcf.jpeg" alt="OverviewProyect" width="400" height="300">
 
 ## Configuracion inicial
 - A la memory card le grabo la imagen de 2018-10-09-raspbian-stretch-lite en una memory card de 32GB (De preferencia con buena tasa de I/O, buscar alguna marca ScanDisk Ultra o extreme)
@@ -60,4 +62,5 @@ Despues del reinicio Puedes corroborar que servicios se encuentran activos con `
 ## Referencias
 [^1]: https://github.com/sunfounder/nas-kit
 [^2]: https://github.com/sunfounder/nas-kit/issues/8#issue-957667166
+[^3]: https://www.sunfounder.com/
 
