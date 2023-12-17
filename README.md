@@ -48,6 +48,8 @@ Despues del reinicio Puedes corroborar que servicios se encuentran activos con `
 > [!CAUTION]
 > En caso de que el repositorio de nas-kit te diera problemas, prueba con varios workaround, por ejemplo:
 > - Si se presentan error por conversion de string to float(Esto no se si ya lo corrigieron porque tenian temas con el caracter de separacion de decimales), prueba ajustando el locale a en_US
+> - En caso de error *'Executable path is not absolute, ignoring'* lo que hice fue editar el archivo **nas-kit.service** agregando rutas absolutas de los programas y quitando el sudo
+> - ![Instalacion en exito](imagenes/systemd-nas-kit.png)
 > - Alguna vez erroneamente reporte un bug, mira [^2] :sweat_smile:
 
 
