@@ -22,6 +22,7 @@ Considera que debes tener estas python3 para poder usar GPIO en este proyecto `s
 
 Estaba leyendo que NO se debe usar **Rpi.GPIO2** Ni tampoco **gpiod** por lo que deberas asegurar este punto:
 `sudo pip3 uninstall Rpi.GPIO2 gpiod` y `pip3 uninstall Rpi.GPIO2 gpiod`
+En caso de que no existe, aparece este mensaje *Cannot uninstall requirement Rpi.GPIO2, not installed*
 
 ## Descargar e instalar el paquetes NAS - KIT [^1]
 ```
@@ -43,7 +44,8 @@ python3 main/raspi_omv_main.py
 ```
 > [!CAUTION]
 > En caso de que el repositorio de nas-kit te diera problemas, prueba con varios workaround, por ejemplo:
-> - Si se presentan error por conversion de string to float, prueba ajustando el locale a en_US
+> - Si se presentan error por conversion de string to float(Esto no se si ya lo corrigieron porque tenian temas con el caracter de separacion de decimales), prueba ajustando el locale a en_US
+> - Alguna vez erroneamente reporte un bug, mira [^2] :sweat_smile:
 
 Despues del reinicio Puedes corroborar que servicios se encuentran activos con `systemctl -t service list-units --all`
 > [!NOTE]
@@ -52,4 +54,5 @@ Despues del reinicio Puedes corroborar que servicios se encuentran activos con `
 
 ## Referencias
 [^1]: https://github.com/sunfounder/nas-kit
+[^2]: https://github.com/sunfounder/nas-kit/issues/8#issue-957667166
 
