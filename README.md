@@ -1,4 +1,4 @@
-# raspberryPi
+# RaspberryPi & NAS KIT
 Descripcion de Pasos para configuracion RaspBerry Pi B+ 1.2 + SUNFounder NAS KIT
 
 ## Configuracion inicial
@@ -30,6 +30,7 @@ git clone --depth=1 https://github.com/sunfounder/nas-kit.git
 cd nas-kit
 sudo python3 setup.py
 sudo cp ./bin/nas-kit.service /lib/systemd/system/nas-kit.service
+sudo chmod +x /lib/systemd/system/nas-kit.service
 sudo chmod +x /usr/bin/nas-kit
 sudo systemctl daemon-reload
 sudo systemctl enable nas-kit.service
@@ -40,14 +41,14 @@ sudo systemctl start nas-kit
 Para corroborar que al menos el script funciona , ejecuta:
 ```
 cd ~/nas-kit
-python3 main/raspi_omv_main.py
+python3 main/raspi_omv_main.py &
 ```
 > [!CAUTION]
 > En caso de que el repositorio de nas-kit te diera problemas, prueba con varios workaround, por ejemplo:
 > - Si se presentan error por conversion de string to float(Esto no se si ya lo corrigieron porque tenian temas con el caracter de separacion de decimales), prueba ajustando el locale a en_US
 > - Alguna vez erroneamente reporte un bug, mira [^2] :sweat_smile:
 
-Despues del reinicio Puedes corroborar que servicios se encuentran activos con `systemctl -t service list-units --all`
+Despues del reinicio Puedes corroborar que servicios se encuentran activos con `systemctl -t service list-units --all` o especificamente con `sudo systemctl status nas-kit.service`
 > [!NOTE]
 > Hacerlo bajo tus propio riesgo
 
